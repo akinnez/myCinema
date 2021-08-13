@@ -1,0 +1,109 @@
+*{
+    font-family: 'Modern Antiqua';
+    transition: all 3s ease-in-out;
+  }
+  body,html{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#5F4B8BFF,#E69A8DFF); 
+    background: -webkit-linear-gradient(45deg,#5F4B8BFF,#E69A8DFF) 
+  }
+  form{
+      width: 70%;
+      margin: auto;
+      margin-bottom: 30px;
+  }
+  span{
+      color: #E69A8DFF;
+      font-weight: 600;
+  }
+  
+  a{
+      color: #fff;
+  }
+  a:hover{
+      text-decoration: none;
+  }
+  .cardContainer{
+      width: 40%;
+      /* background: rgba(95, 75, 139, 0.50); */
+      background: transparent;
+      /* background-image: url(../img/video.jpg); */
+      /* background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: overlay; */
+      border: none;
+  }
+  .btnConatiner{
+      width: 70%;
+      margin: auto;
+      animation: fadeInUp;
+    animation-duration: 2s;
+    margin-bottom: 50px;
+  }
+  .btn{
+    width: 100%;  
+    height: 50px;
+    background: #E69A8DFF;
+    color: #5F4B8BFF;
+    font-weight: 600;
+  }
+  .btn:hover{
+    transition: all 3s ease-in-out;
+    transform: scale(1.1);
+    background: #5f4b8bff;
+    color: #E69A8DFF;
+  }
+  input{
+    border:none;
+    outline: none; 
+    border-bottom:3px dashed #5f4b8bff; 
+    height: 50px;
+    color: #5F4B8BFF;
+  }
+  h1{
+      margin-top: 3rem;
+    color:#5F4B8BFF;
+    font-weight: 600;
+    animation: bounce;
+    animation-duration: 2s;
+  }
+  ::placeholder{
+      color:#5F4B8BFF
+  }
+
+  @media(width:540px){
+      .cardContainer{
+          width: 60%;
+      }
+  }
+  @media(width:414px){
+      .cardContainer{
+          width: 70%;
+      }
+  }
+  @media(width:411px){
+      .cardContainer{
+          width: 80%;
+      }
+  }
+  @media(width:375px){
+      .cardContainer{
+          width: 95%;
+      }
+  }
+  @media(width:360px){
+      .cardContainer{
+          width: 95%;
+      }
+  }
+  @media(width:320px){
+      .cardContainer{
+          width: 95%;
+      }
+  }
+  @media(width:280px){
+      .cardContainer{
+          width: 95%;
+      }
+  }

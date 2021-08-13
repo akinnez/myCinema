@@ -1,0 +1,122 @@
+* {
+  font-family: 'Modern Antiqua';
+  transition: all 3s ease-in-out;
+  scroll-behavior: smooth;
+}
+body,
+html {
+  background: #000;
+}
+.brand {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce;
+  animation-duration: 3s;
+}
+/* nav {
+  font-size: 18px;
+}
+li {
+  margin-left: 5rem;
+} */
+.btn {
+  padding: 10px 15px;
+  background: #e69a8dff;
+  color: #5f4b8bff;
+  font-weight: 600;
+}
+.btn:hover {
+  transition: all 3s ease-in-out;
+  transform: scale(1.1);
+  background: #5f4b8bff;
+  color: #e69a8dff;
+}
+.pageBanner {
+  height: 550px;
+  width: 100%;
+  background-image: url(../img/dune.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bannerDetails {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  padding-left: 6%;
+  /* width: 45%; */
+  /* border: 1px solid red; */
+}
+.bannerDetails h1 {
+  font-size: 40px;
+  letter-spacing: 1rem;
+  color: #e69a8d;
+}
+.bannerDetails span {
+  color: #5f4b8bff;
+  font-weight: 600;
+}
+.textContainer {
+  width: 45%;
+  height: 100px;
+  overflow: hidden;
+  text-overflow: inherit;
+}
+.videoCollection {
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.moviesCollections {
+  height: 400px;
+  margin-top: 2rem;
+}
+img {
+  height: 100%;
+}
+ul li {
+  height: 350px;
+  list-style: none;
+  
+}
+ul {
+  display: flex;
+  flex-flow: row;
+}
+#overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0; 
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0,0.1);
+  transition: 0.5s ease;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#button {
+  margin-top: -2rem;
+}
+
+.imgList {
+  position: relative;
+}
+
+.imgList:hover #button {
+  opacity: 0.7;
+}
+.imgList:hover #overlay {
+  opacity: 1;
+}
+.imgList:hover img {
+  transition: all 800ms ease-in-out;
+  transform: scale(1.1);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
