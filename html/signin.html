@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EVINBTV || Sign-In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/signin.css" />
     <link
@@ -18,6 +19,35 @@
       rel="stylesheet"
     />
   </head>
+  <style>
+     @keyframes body{
+        0%{  
+            background: linear-gradient(#E69A8D,#5F4B8B);
+            
+        }
+        20%{
+            background: linear-gradient(45deg,#5F4B8B,#E69A8D);
+            transform: scale(1.1);
+        }
+        60%{
+            background: linear-gradient(90deg,#E69A8D,#5F4B8B);
+            transform: scale(0.9);
+        }
+        80%{
+            background: linear-gradient(135deg#5F4B8B,#E69A8D);
+            transform: scale(1);
+        }
+        100%{
+            background: linear-gradient(180deg#E69A8D,#5F4B8B);
+            transform: scale(1);
+        }
+      
+    }
+    body{
+    background: linear-gradient(#5F4B8B,#E69A8D);
+    animation: body 20s infinite running ease-in;
+}
+  </style>
   <body>
     <div
       class="
@@ -33,7 +63,7 @@
     >
       <div class="card cardContainer">
         <form action="">
-          <h1 class="text-center" style="font-weight: 800">EVINBTV</h1>
+          <h1 class="text-center" style="font-weight: 800">HYBRIDZ</h1>
           <div class="mt-4">
             <input
               class="w-100 pl-3"
@@ -52,7 +82,7 @@
             />
           </div>
           <small></small>
-          <div class="forgetPassword text-right">
+          <div class="forgetPassword mt-3 text-right">
             <a href="../html/forgetPassword.html"> Forget Password? </a>
           </div>
           <div></div>

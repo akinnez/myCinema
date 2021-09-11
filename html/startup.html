@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<style>
+    *{
+        font-family: 'Modern Antiqua';
+    }
+    @keyframes h1{
+        0%{  
+            opacity: 0.2;
+            letter-spacing: 1.5rem;
+            font-weight: 600;
+            font-size: 20px;
+            color:#2c130e;
+        }
+        20%{
+            opacity: 1;
+            font-size: 80px;
+            letter-spacing: 1.5rem;
+        
+        }
+        60%{
+            font-size: 140px;
+            letter-spacing: 1.5rem;
+           
+        }
+        80%{
+            font-size: 200px;
+            letter-spacing: 1.5rem;
+         
+        }
+        100%{
+            opacity: 0;
+            font-weight: 900;
+            font-size: 300px;
+            color: #180346;
+            letter-spacing: 2.5rem;
+        }
+      
+    }
+    @keyframes body{
+        0%{  
+            background: linear-gradient(#E69A8D,#5F4B8B);
+        }
+        20%{
+            background: linear-gradient(45deg,#5F4B8B,#E69A8D);
+        }
+        60%{
+            background: linear-gradient(90deg,#E69A8D,#5F4B8B);
+        }
+        80%{
+            background: linear-gradient(135deg#5F4B8B,#E69A8D);
+        }
+        100%{
+            background: linear-gradient(180deg#E69A8D,#5F4B8B);
+        }
+      
+    }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    
+    animation: h1 20s ease-in;
+}
+body{
+    background: linear-gradient(#5F4B8B,#E69A8D);
+    animation: body 20s ease-in;
+}
+</style>
+<body>
+    <main>
+        <div>
+            <h1 id="prnt"></h1>
+        </div>
+        
+    </main>
+</body>
+</html>
+<script>
+    let sentences = ["HYBRIDZ"]
+let wc = 0, count = 0;
+function start(){
+    write(sentences[wc])
+} 
+function write(toWrite){
+  prnt.innerHTML += toWrite.substr(count,1)
+  if(toWrite[count]){
+   t = setTimeout(function(a){
+      write(toWrite)
+    },3000)
+    count++;
+    
+  }
+  move(count)
+}
+function move(params) {
+    if (params >= sentences[wc].length) {
+        setTimeout(()=>{
+            location.href = 'home.html'
+        },1800)
+    }
+}
+start()
+
+// function calc() {
+//     arr = [2,15,3,8,4,7]
+//     findmax(arr)
+// }
+// var num;
+// function findmax(params) {
+//     let maxnum = Number.NEGATIVE_INFINITY;
+//     for (num of params) {
+//         if (num > maxnum) {
+//             maxnum = num;
+//         }
+//     }
+//     console.log(maxnum);
+//     // return maxnum
+// }
+
+</script>

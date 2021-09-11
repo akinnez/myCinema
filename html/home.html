@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EVINBTV || HOMEPAGE</title>
-    <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="../css/home.css" />
     <link
       rel="stylesheet"
@@ -18,158 +19,57 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="body">
     <div class="container-fluid w-100 m-0 p-0">
       <div>
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a
+          <div class="container-fluid w-100 d-flex justify-content-around">
+            <div>
+              <a
               class="navbar-brand brand"
               href="#"
               style="text-decoration: none"
             >
-              <label for="" style="font-weight: 800"> EVINBTV </label>
+              <label for="" style="font-weight: 800; color: #5f4b8b;"> HYBRIDZ</label>
             </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse d-flex justify-content-end"
-              id="navbarSupportedContent"
-            >
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Collection</a>
+            </div>
+              <ul class="navbar-nav">
+                <li>
+                  <a class="nav-link" href="#" style="color: #5f4b8b;">Collection</a>
                 </li>
                 <li class="nav-item">
                   <button class="btn">Log Out</button>
                 </li>
               </ul>
-            </div>
           </div>
         </nav>
       </div>
-      <div class="pageBanner">
-        <div class="bannerDetails">
-          <div>
-            <h1>DUNE (2021)</h1>
-            <div class="textContainer">
-              <span>
-                Paul Atreides, a brilliant and gifted young man born into a
-                great destiny beyond his understanding, must travel to the most
-                dangerous planet in the universe to ensure the future of his
-                family and his people. As malevolent forces explode into
-                conflict over the planet's exclusive supply of the most precious
-                resource in existence, only those who can conquer their own fear
-                will survive.
-              </span>
-            </div>
-            <div>
-              <button class="btn mt-3">Play Trailer</button>
-            </div>
+      <div class="pageBanner"id="pageBanner">
+        <div class="bannerDetails" id="bannerDetails"></div>
           </div>
         </div>
       </div>
       <div class="videoCollection mt-5 mb-5">
         <h1>Upcoming Movies</h1>
-        <div class="moviesCollections">
+        <div class="moviesCollections m-0 p-0">
           <ul id="ul"></ul>
         </div>
       </div>
+      
       <div>
+        <div>
+          <div id="vids">
 
-
-        <div style="border: 1px solid red;height: 320px;">
-
-            <h1>
-                Jungle Book
-            </h1>
-
-            <button>
-                      PLAY TRAILER
-            </button>
-
-
+          </div>
         </div>
-        <!-- Button trigger modal -->
-        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button> -->
-        <!-- Modal -->
-        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> -->
-      </div>
-    </div>
-    <script
-    src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"
-  ></script>
-  </body>
+        <footer>
+          <div>
+            <button onclick="light()" id="btn">light mode</button>
+          </div>
+        </footer>
+</body>
 </html>
-<!-- 
-<script>
-  (function () {
-    let MoviesPng = [
-      { Image: '../img/cherry.png' },
-      { Image: '../img/freeguy.jpg' },
-      { Image: '../img/dune.png' },
-      { Image: '../img/storyofjordan.jpg' },
-      { Image: '../img/withoutremorse.png' },
-      { Image: '../img/shang-chi-poster-marvel.jpg' },
-      { Image: '../img/kingsmen.jpg' },
-      { Image: '../img/themauritania.png' },
-      { Image: '../img/thecourier.png' },
-    ];
-    for (let movies of MoviesPng) {
-      console.log(movies)
-      ul.innerHTML += ` <li class='imgList'>
-              <img src="${movies.Image}" alt="">
-              <div id='overlay'>
-                <div>
-                  <button class='btn' id='button' onclick='getInfo()'>Movie Details</button>
-                  </div>
-                </div>
-      </li>      
-       `;
-    }
-    // console.log(MoviesPng);
-
-    function getInfo() {
-      console.log('this is click event');
-    }
-  
-    // let crd =()=> {
-    //   console.log(click);
-    // };
-  })
-  ();
-</script> -->
+<script src="../js/home.js"></script>
+<script src="../js/video.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/videoCategories.js"></script>

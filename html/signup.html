@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVINBTV || Sign-Up</title>
     <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/signup.css">
     <link
     rel="stylesheet"
@@ -15,25 +16,58 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">
 </head>
+<style>
+    @keyframes body{
+       0%{  
+           background: linear-gradient(#E69A8D,#5F4B8B);
+           
+       }
+       20%{
+           background: linear-gradient(45deg,#5F4B8B,#E69A8D);
+           transform: scale(1.1);
+       }
+       60%{
+           background: linear-gradient(90deg,#E69A8D,#5F4B8B);
+           transform: scale(0.9);
+       }
+       80%{
+           background: linear-gradient(135deg#5F4B8B,#E69A8D);
+           transform: scale(1);
+       }
+       100%{
+           background: linear-gradient(180deg#E69A8D,#5F4B8B);
+           transform: scale(1);
+       }
+     
+   }
+   body{
+    background: linear-gradient(45deg,#5F4B8B,#E69A8D); 
+    background: -webkit-linear-gradient(45deg,#5F4B8B,#E69A8D) ;
+   animation: body 20s infinite running ease-in;
+}
+ </style>
 <body>
   <div class="container-fluid w-100 p-0 m-0 d-flex justify-content-center align-items-center" style="height: 100%;">
    <div class="card cardContainer">
         <form action="">
             <h1 class="text-center" style="font-weight: 800;">
-                EVINBTV
+               HYBRIDZ
             </h1>
             <div class="mt-5">
-                <input class="w-100 pl-3" type="text" required placeholder="Name">
+                <input class="w-100 pl-3" type="text" required placeholder="Name" id="name">
             </div>
             <div class="mt-4">
-                <input class="w-100 pl-3" type="text" required placeholder="Username">
+                <input class="w-100 pl-3" type="text" required placeholder="Email" id="email">
             </div>
             <div class="mt-4">
-                <input class="w-100 pl-3" type="password" required placeholder="Password">
+                <input class="w-100 pl-3" type="text" required placeholder="Username" id="username">
+            </div>
+            <div class="mt-4">
+                <input class="w-100 pl-3" type="password" required placeholder="Password" id="password">
             </div>
         </form>
         <div class="btnConatiner mt-5 mb-5">
-            <button class="btn">Create Account</button>
+            <button class="btn" onclick="signup()">Create Account</button>
         </div>
         <div class="mb-4 text-center">
             <span>
@@ -44,3 +78,4 @@
 </div>
 </body>
 </html>
+<script src='../js/signup.js'></script>

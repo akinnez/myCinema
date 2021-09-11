@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVINBTV || HOME</title>
-    <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link
     rel="stylesheet"
@@ -30,12 +31,14 @@
     <div id="myNav" style="z-index: 1;">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand brand" href="#" style="text-decoration: none;">
-            <label for="" style="font-weight: 800;">
-              EVINBTV
-            </label>
-            </a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div>
+            <a class="navbar-brand brand" href="#" style="text-decoration: none;">
+              <label for="" style="font-weight: 800;">
+                HYBRIDZ
+              </label>
+              </a>
+          </div>
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a href="../html/signin.html"><button class="btn">Login</button></a>
               </li>
@@ -57,7 +60,7 @@
     <div class="getStarted mx-auto mt-4">
       <input type="email" class="mx-auto" placeholder="Email" required id="email">
       <!-- <a href="../html/signup.html"> -->
-        <button class="btn btnCheck" onclick="getStarted()">Get Started</button>
+        <button id="getbtn" class="btn btnCheck" onclick="getStarted()">Get Started</button>
       <!-- </a> -->
     </div>
 </div>
@@ -94,25 +97,20 @@
           </div>
             </div>
     </div>
-    <div class="mt-5 mb-5">
+    <div class="mt-5">
       <footer class="mt-5 text-center">
               Footer Component
       </footer>
+        <button onclick="light()" id="btn">light mode</button>
     </div>
+
+
+
+    <!-- <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"
+  ></script> -->
   </body>
 </html>
-<script>
-
-    signupArr = []
-//  var a = document.getElementById('email')
-
- function getStarted() {
-   var obj = {email:document.getElementById('email').value}
-   signupArr.push(obj)
-   localStorage.setItem(`${document.getElementById('email').value}`, JSON.stringify(signupArr))
-      location.href = 'signup.html'
- }
-
-
-
-</script>
+<script src="../js/App.js"></script>

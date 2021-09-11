@@ -3,10 +3,13 @@
     transition: all 3s ease-in-out;
     scroll-behavior: smooth;
   }
+  body{
+    background-color: #000;
+  }
   body,html{
     width: 100%;
-    /* height: 100%; */
-    background-color: #000
+    /* background-color: #000; */
+ 
   }
     .brand{
       display: inline-block;
@@ -14,10 +17,10 @@
       animation: bounce;
       animation-duration: 3s;
     }
-  .active{
-    color:#E69A8DFF;
-    border-bottom:2px dotted #E69A8DFF;
-  }
+  /* .active{
+    color:#E69A8D;
+    border-bottom:2px dotted #E69A8D;
+  } */
   nav {
     font-size: 18px;
     height: 30px;
@@ -36,7 +39,7 @@
     object-fit: cover;
   }
   #myNav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -47,7 +50,7 @@
     
   }
   a {
-    color: #5F4B8BFF;
+    color: #5F4B8B;
   }
   .topColContainer{
       width: 80%;
@@ -59,23 +62,23 @@
   }
   .btn{
     padding: 10px 15px;
-    background: #E69A8DFF;
-    color: #5F4B8BFF;
+    background: #E69A8D;
+    color: #5F4B8B;
     font-weight: 600;
   }
   .btn:hover{
     transition: all 3s ease-in-out;
     transform: scale(1.1);
-    background: #5f4b8bff;
-    color: #E69A8DFF;
+    background: #5f4b8b;
+    color: #E69A8D;
   }
   span{
-    color: #E69A8DFF;
+    color: #E69A8D;
     font-size: 18px;
   }
   h1{
     width: 75%;
-    color: #5F4B8BFF;
+    color: #5F4B8B;
     font-weight: 600;
   }
   .overlay{
@@ -100,7 +103,7 @@
     border-radius: 5px;
     outline: none;
     border: none;
-    color: #5F4B8BFF;
+    color: #5F4B8B;
   }
   label{
     font-weight: 800;
@@ -111,21 +114,20 @@
     height: 320px;
   }
   ::placeholder{
-      color: #5F4B8BFF;  
-  }
-  ::-webkit-scrollbar{
-    width: 6px;
-  }
-  ::-webkit-scrollbar-thumb{
-    /* background: linear-gradient(#E69A8DFF,#5F4B8BFF);
-    border-radius: 6px; */
-    display: none;
-  }
-  ::-webkit-scrollbar-thumb:hover{
-    border-radius: 6px;
-    display: block;
-    background: linear-gradient(#5F4B8BFF,#E69A8DFF);
-  }
+    color: #5F4B8B;  
+}
+::-webkit-scrollbar{
+  width: 6px;
+}
+::-webkit-scrollbar-thumb{
+  display: none;
+}
+::-webkit-scrollbar-thumb:hover{
+  border-radius: 6px;
+  display: block;
+  background: linear-gradient(#5F4B8B,#E69A8D);
+}
+
 
 
 
@@ -135,7 +137,7 @@
 
 
 
-@media (width:1024px) {
+@media (max-width:1024px) {
   #video,.overlay{
     height: 100vh;
   }
@@ -148,7 +150,10 @@
     width: 60%;
   }
 }
-@media (width:768px) {
+@media (max-width:768px) {
+  #myNav{
+    position: fixed;
+  }
   #video{
     height: 100vh;
   }
@@ -156,7 +161,7 @@
     width: 60%;
   }
 }
-@media (width:540px) {
+@media (max-width:540px) {
   #video{
     height: 100vh;
   }
@@ -170,7 +175,7 @@
     width: 100%;
   }
 }
-@media (width:414px) {
+@media (max-width:414px) {
   #video{
     height: 100vh;
   }
@@ -189,7 +194,7 @@
     height: 100%;
   }
 }
-@media (width:411px) {
+@media (max-width:411px) {
   #video{
     height: 100vh;
   }
@@ -208,7 +213,7 @@
     width: 100%;
   }
 }
-@media (width:375px) {
+@media (max-width:375px) {
   #video{
     height: 100vh;
   }
@@ -230,7 +235,7 @@
     width: 100%;
   }
 }
-@media (width:360px) {
+@media (max-width:360px) {
  #video{
     height: 100vh;
   }
@@ -252,7 +257,7 @@
     width: 100%;
   }
 }
-@media (width:320px) {
+@media (max-width:320px) {
   #video{
     height: 100vh;
   }
