@@ -24,4 +24,14 @@ function ret(id) {
     .catch((err) => {
       console.error('Error loading GAPI client for API', err);
     });
+  }
+async function checkit() {
+  return fetch(
+    `https://akinnez.github.io/myCinema/json/movie.json`
+  )
+    .then((response) => response.json())
+    .then((json) => console.log(json))
+    .catch((err) => {
+      console.error('Error loading GAPI client for API', err);
+    });
 }
