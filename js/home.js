@@ -23,8 +23,8 @@ function light() {
          await fetch(url)
           .then((res) =>  res.json())
           .then((json) => {
-            let {Upcoming}=json
-            let {Recent} = json;
+            let {Upcoming,Recent,Popular}=json
+            
             var i = Math.floor(Math.random() * Recent.length )
             
     document.getElementById(
@@ -43,6 +43,9 @@ function light() {
           </div>
           </div>` 
           moviesDisplay(Upcoming);
+          recentMovies(Recent);
+          PopularMovies(Popular)
+          loadingLazy()
           }
             )
           .catch((err) => {
@@ -55,14 +58,12 @@ function light() {
     function trailer(params) {
       
     }
-
-
-
-  
   function moviesDisplay(newMovie) {
+    // let date = new Date()
+    // console.log(date.)
     for (let index = 0; index < newMovie.length; index++) {
       ul.innerHTML += ` <li class='imgList'>
-          <img src="${newMovie[index].Image}" alt="" class="image">
+          <img data-src="${newMovie[index].Image}" alt="" class="image">
           <div id='overlay'>
             <div>
               <button class='btn' id='button' onclick="getInfo(newMovie[${index}])">Movie Details</button>
@@ -71,7 +72,41 @@ function light() {
   </li>      
    `;
     }
-  
+    // loadingLazy()
+  }
+
+  function recentMovies(recentMovie) {
+    // let date = new Date()
+    // console.log(date.)
+    for (let index = 0; index < recentMovie.length; index++) {
+      ull.innerHTML += ` <li class='imgList'>
+          <img data-src="${recentMovie[index].Image}" alt="" class="image">
+          <div id='overlay'>
+            <div>
+              <button class='btn' id='button' onclick="getInfo(recentMovie[${index}])">Movie Details</button>
+              </div>
+            </div>
+  </li>      
+   `;
+    }
+    // loadingLazy()
+  }
+  function PopularMovies(popularMovie) {
+    // let date = new Date()
+    // console.log(date.)
+    for (let index = 0; index < popularMovie.length; index++) {
+      ulll.innerHTML += ` <li class='imgList'>
+          <img data-src="${popularMovie[index].Image}" alt="" class="image">
+          <div id='overlay'>
+            <div>
+              <button class='btn' id='button' onclick="getInfo(popularMovie[${index}])">Movie Details</button>
+              </div>
+            </div>
+  </li>      
+   `;
+    }
+    // loadingLazy()
+  }
     //   for (let movies of MoviesPng) {
     //       console.log(movies);
     //     ul.innerHTML += ` <li class='imgList'>
@@ -85,16 +120,35 @@ function light() {
     // `;
     //   }
     //   console.log(document.getElementById('button'));
-  }
+  
   
   function getInfo(mine) {
     console.log(mine);
   }
-  
-  // function setLang(params) {
-  //   document.getElementById('html').setAttribute('lang', 'ar');
-  //   console.log(html.getAttribute('lang'));
-  // }
-  // setLang();
-  
 
+  let loadingLazy = ()=> {
+    var elements = document.querySelectorAll('img[data-src]');
+    var index = 0;
+    
+    var lazyLoad = ()=> {
+      if (index >= elements.length) return;
+      var item = elements[index]; 
+      console.log(item.offsetWidth);
+      if (this.scrollY + this.innerHeight > item.offsetTop) { 
+        var src = item.getAttribute('data-src');
+        item.src = src;
+        item.addEventListener('load', ()=> {
+          item.removeAttribute('data-src');
+        });
+        index++;
+        lazyLoad();
+      }
+    };
+    var init = function () {
+      window.addEventListener('scroll', lazyLoad);
+      lazyLoad();
+    };
+    return init();
+  }
+  loadingLazy()
+  ;

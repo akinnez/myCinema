@@ -79,6 +79,11 @@ li {
 }
 img {
   height: 100%;
+  opacity: 1;
+  transition: opacity 6s;
+}
+img[data-src] {
+  opacity: 0;
 }
 ul {
   display: flex;
