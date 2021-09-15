@@ -45,6 +45,9 @@ li {
   background-size: contain;
   background-position: center;
 }
+.bannerDetails1{
+  display: none;
+}
 .bannerDetails {
   display: flex;
   align-items: flex-end;
@@ -131,4 +134,26 @@ ul {
 }
 ::-webkit-scrollbar {
   display: none;
+}
+@media (max-width:991px) {
+  .bannerDetails{
+    display: none;
+  }
+  .bannerDetails1{
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .bannerDetails1 h1{
+    width: 100%;
+    letter-spacing: .5rem;
+    color: #e69a8d;
+  }
+  .bannerDetails1 span{
+    color:rgb(119, 106, 146) ;
+  font-weight: 600;
+  }
+  li:first-child{
+    display: none;
+  }
 }
