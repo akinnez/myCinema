@@ -1,6 +1,24 @@
 {
 "Upcoming":[
   {
+    "Image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ebc24c2b-5832-472f-aa23-0a8af902decc/d8o2dcm-52de1f46-5b70-490b-b19e-8bf33322a065.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9lYmMyNGMyYi01ODMyLTQ3MmYtYWEyMy0wYThhZjkwMmRlY2MvZDhvMmRjbS01MmRlMWY0Ni01YjcwLTQ5MGItYjE5ZS04YmYzMzMyMmEwNjUuanBnIn1dXX0.8rmH-vljSb8eUadk6GSV2Zn9WuXR2frZHHEWbw8okGQ",
+    "title": "Iron Man 4",
+    "desc": "We saw Robert Downey Jr play the role for the longest time and kept on wanting more. it became one of the most financially successful films of all time. After 22 movies, we saw all of our favorite superheroes in one film (Avengers: Endgame) which became the biggest finale of any superhero film ever made.",
+    "trailerID": "0DZR1Yb7VPg",
+    "studio": "marvel",
+    "categories":"Action",
+    "released Date":"29-5-2022"
+  },
+  {
+    "Image": "https://fanart.tv/fanart/movies/505026/movieposter/death-on-the-nile-5f3e57db72290.jpg",
+    "title": "Death on the Nile",
+    "desc": "The peace and tranquility that was temporarily existent on the S.S. Karnak is destroyed after one of the passengers is found murdered. Renowned Belgian detective Hercule Poirot is entrusted with the important task of identifying which one of the passengers is the killer before they strike again.",
+    "trailerID": "ij2ztHOOe9s",
+    "categories": "tragedy",
+    "studio":"20th Century Studio",
+    "released Date":"11-2-2022"
+  },
+  {
     "Image": "https://celebmafia.com/wp-content/uploads/2021/03/chante-adams-a-journal-for-jordan-set-in-the-west-village-03-28-2021-6_thumbnail.jpg",
     "title": "The Journal of Jordan",
     "desc": "First Sgt. Charles Monroe King keeps a journal for his newborn son while stationed overseas",
@@ -10,15 +28,6 @@
     "studio":"Sony Pictures"
   },
   {
-    "Image": "https://www.tebeosfera.com/T3content/img/T3_muestras/T3_audiovisuales/v/v/m_kingsman_2021_marv_20th_century_-the_king_s_man-_-clon-_7210vv.jpg",
-    "title": "The King's Men",
-    "desc": "One man must race against time to stop history's worst tyrants and criminal masterminds as they get together to plot a war that could wipe out millions of people and destroy humanity.",
-    "trailerID": "XsN9NnD0tFY",
-    "categories": "Action",
-    "released Date":"22-10-2021",
-    "studio":"Marv Studios"
-  },
-  {
     "Image": "https://static2.srcdn.com/wordpress/wp-content/uploads/2021/09/King-Richard-Will-Smith-Venus-Serena-Williams.jpg",
     "title": "King Richard (2021)",
     "desc": "Venus and Serena Williams came from an unlikely background to dominate the world of tennis. Taking a look at thes tennis superstars and how they becamewo they are after coaching from their father Richard Williams.",
@@ -26,16 +35,6 @@
     "studio": "Warner Bros. Pictures",
     "categories":"Drama",
     "released Date":"19-11-2021"
-  },
-  
-  {
-    "Image": "https://i.pinimg.com/originals/d3/02/eb/d302eb49f77674f429e7dae78e191f62.jpg",
-    "title": "Venom 2",
-    "desc": "Tom Hardy returns to the big screen as the lethal protector Venom, one of MARVEL's greatest and most complex characters. Directed by Andy Serkis, the film also stars Michelle Williams, Naomie Harris and Woody Harrelson, in the role of the villain Cletus Kasady/Carnage.",
-    "trailerID": "rrwBnlYOp4g",
-    "studio":"marvel",
-    "released Date":"15-10-2021",
-    "categories":"Action"
   },
   {
     "Image": "https://i2.wp.com/www.comicsbeat.com/wp-content/uploads/2021/05/eternals-poster-1-e1621872130943.jpg?fit=1199%2C679&ssl=1",
@@ -47,22 +46,22 @@
     "released Date":"5-11-2021"
   },
   {
-    "Image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ebc24c2b-5832-472f-aa23-0a8af902decc/d8o2dcm-52de1f46-5b70-490b-b19e-8bf33322a065.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9lYmMyNGMyYi01ODMyLTQ3MmYtYWEyMy0wYThhZjkwMmRlY2MvZDhvMmRjbS01MmRlMWY0Ni01YjcwLTQ5MGItYjE5ZS04YmYzMzMyMmEwNjUuanBnIn1dXX0.8rmH-vljSb8eUadk6GSV2Zn9WuXR2frZHHEWbw8okGQ",
-    "title": "Iron Man 4",
-    "desc": "We saw Robert Downey Jr play the role for the longest time and kept on wanting more. it became one of the most financially successful films of all time. After 22 movies, we saw all of our favorite superheroes in one film (Avengers: Endgame) which became the biggest finale of any superhero film ever made.",
-    "trailerID": "0DZR1Yb7VPg",
-    "studio": "marvel",
-    "categories":"Action",
-    "released Date":"29-5-2022"
+    "Image": "https://www.tebeosfera.com/T3content/img/T3_muestras/T3_audiovisuales/v/v/m_kingsman_2021_marv_20th_century_-the_king_s_man-_-clon-_7210vv.jpg",
+    "title": "The King's Men",
+    "desc": "One man must race against time to stop history's worst tyrants and criminal masterminds as they get together to plot a war that could wipe out millions of people and destroy humanity.",
+    "trailerID": "XsN9NnD0tFY",
+    "categories": "Action",
+    "released Date":"22-10-2021",
+    "studio":"Marv Studios"
   },
   {
-    "Image": "https://i.ytimg.com/vi/4g8dFyuc9A0/hqdefault.jpg",
-    "title": "Last Man Down",
-    "desc": "After civilization succumbs to a deadly pandemic and his wife is murdered, a special forces soldier abandons his duty and becomes a hermit in the Nordic wilderness.",
-    "trailerID": "ZUNdnEXL290",
-    "released Date": "19-10-2021",
-    "categories":"Action",
-    "studio":"Saban Films"
+    "Image": "https://i.pinimg.com/originals/d3/02/eb/d302eb49f77674f429e7dae78e191f62.jpg",
+    "title": "Venom 2",
+    "desc": "Tom Hardy returns to the big screen as the lethal protector Venom, one of MARVEL's greatest and most complex characters. Directed by Andy Serkis, the film also stars Michelle Williams, Naomie Harris and Woody Harrelson, in the role of the villain Cletus Kasady/Carnage.",
+    "trailerID": "rrwBnlYOp4g",
+    "studio":"marvel",
+    "released Date":"15-10-2021",
+    "categories":"Action"
   },
   {
     "Image": "https://pm1.narvii.com/6475/69eff9f2753effca85bee305f8493c4caa9de7d2_hq.jpg",
@@ -74,6 +73,15 @@
     "studio":"D.C Production"
   },  
   {
+    "Image": "https://i.ytimg.com/vi/4g8dFyuc9A0/hqdefault.jpg",
+    "title": "Last Man Down",
+    "desc": "After civilization succumbs to a deadly pandemic and his wife is murdered, a special forces soldier abandons his duty and becomes a hermit in the Nordic wilderness.",
+    "trailerID": "ZUNdnEXL290",
+    "released Date": "19-10-2021",
+    "categories":"Action",
+    "studio":"Saban Films"
+  },
+  {
     "Image": "https://posterspy.com/wp-content/uploads/2020/03/007_NTTD_Poster-1500x2222.jpg",
     "title": "No Time to Die",
     "desc": " James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
@@ -81,20 +89,8 @@
     "categories": "Action",
     "released Date":"8-10-2021",
     "studio":"20th Century Studio"
-  },
-  {
-    "Image": "https://fanart.tv/fanart/movies/505026/movieposter/death-on-the-nile-5f3e57db72290.jpg",
-    "title": "Death on the Nile",
-    "desc": "The peace and tranquility that was temporarily existent on the S.S. Karnak is destroyed after one of the passengers is found murdered. Renowned Belgian detective Hercule Poirot is entrusted with the important task of identifying which one of the passengers is the killer before they strike again.",
-    "trailerID": "ij2ztHOOe9s",
-    "categories": "tragedy",
-    "studio":"20th Century Studio",
-    "released Date":"11-2-2022"
   }
 ],
-
-
-
 
 "Recent":[
   {
