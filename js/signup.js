@@ -28,7 +28,7 @@
 
 // url = 'https://akinnez.github.io/myCinema/json/users.json'
 const form = document.querySelector('form')
-
+users=[]
 let createAccount = async()=>{
 
   // e.preventDefault();
@@ -39,15 +39,12 @@ let createAccount = async()=>{
     Username: form.username.value,
     Password: form.password.value 
   }
+  // users.push(formData)
 console.log(formData);
-  await fetch('https://akinnez.github.io/myCinema/json/users.json',{
-    method:'POST',
-    body: JSON.stringify(formData),
-    headers:{'Content-Type':'application/json',
-    'Access-Control-Allow-Origin':'*',
-    'Access-Control-Allow-Methods': 'POST'
-  }
-  }).catch((err)=>{
+  return fetch('https://akinnez.github.io/myCinema/json/users.json')
+  .then((res)=>res.json())
+  .then((data)=>console.log(data))
+  .catch((err)=>{
     console.log('message from api:' +err);
   })
   // window.location.replace('/startup.html')
