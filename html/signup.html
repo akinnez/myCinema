@@ -48,26 +48,27 @@
 <body>
   <div class="container-fluid w-100 p-0 m-0 d-flex justify-content-center align-items-center" style="height: 100%;">
    <div class="card cardContainer">
-        <form action="">
+        <form onsubmit="creatAccount()">
             <h1 class="text-center" style="font-weight: 800;">
                HYBRIDZ
             </h1>
             <div class="mt-5">
-                <input class="w-100 pl-3" type="text" required placeholder="Name" id="name">
+                <input name="name" class="w-100 pl-3" type="text" required placeholder="Enter your Name" id="name">
             </div>
             <div class="mt-4">
-                <input class="w-100 pl-3" type="text" required placeholder="Email" id="email">
+                <input name="email" class="w-100 pl-3" type="text" required placeholder="Enter your Email" id="email">
             </div>
             <div class="mt-4">
-                <input class="w-100 pl-3" type="text" required placeholder="Username" id="username">
+                <input name="username" class="w-100 pl-3" type="text" required placeholder="Enter your Username" id="username">
             </div>
             <div class="mt-4">
-                <input class="w-100 pl-3" type="password" required placeholder="Password" id="password">
+                <input name="password" class="w-100 pl-3" type="password" required placeholder="Enter your Password" id="password">
+            </div>
+            <div class="btnConatiner mt-5 mb-5">
+                <button class="btn">Create Account</button>
             </div>
         </form>
-        <div class="btnConatiner mt-5 mb-5">
-            <button class="btn" onclick="signup()">Create Account</button>
-        </div>
+        
         <div class="mb-4 text-center">
             <span>
                 Already have an Account... <a href="../html/signin.html"> Sign In</a>
