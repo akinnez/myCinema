@@ -47,8 +47,10 @@ console.log(formData);
     'Access-Control-Allow-Origin':'*',
     'Access-Control-Allow-Methods': 'POST'
   }
+  }).catch((err)=>{
+    console.log('message from api:' +err);
   })
-  window.location.replace('/startup.html')
+  // window.location.replace('/startup.html')
   //  location.href='startup.html';
 }
 
