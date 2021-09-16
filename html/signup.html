@@ -48,7 +48,7 @@
 <body>
   <div class="container-fluid w-100 p-0 m-0 d-flex justify-content-center align-items-center" style="height: 100%;">
    <div class="card cardContainer">
-        <form onsubmit="creatAccount()">
+        <form>
             <h1 class="text-center" style="font-weight: 800;">
                HYBRIDZ
             </h1>
@@ -64,11 +64,11 @@
             <div class="mt-4">
                 <input name="password" class="w-100 pl-3" type="password" required placeholder="Enter your Password" id="password">
             </div>
-            <div class="btnConatiner mt-5 mb-5">
-                <button class="btn">Create Account</button>
-            </div>
+            
         </form>
-        
+        <div class="btnConatiner mt-5 mb-5">
+            <button class="btn" onclick="createAccount()">Create Account</button>
+        </div>
         <div class="mb-4 text-center">
             <span>
                 Already have an Account... <a href="../html/signin.html"> Sign In</a>
